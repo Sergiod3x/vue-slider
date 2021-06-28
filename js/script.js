@@ -12,6 +12,23 @@ new Vue(
             
            ],
            pictureIndex : 0,
+        },
+        methods:{
+            next: function () {
+                if(this.pictureIndex===3){
+                    this.pictureIndex=0
+                } else{
+                    this.pictureIndex++;
+                }
+                
+            },
+            prev: function () {
+                if(this.pictureIndex===0){
+                    this.pictureIndex=3
+                } else{
+                    this.pictureIndex--;
+                }
+            },
         }
     }
        
