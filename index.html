@@ -17,15 +17,15 @@
 
         <div class="slider container">
             <div class="row">
-                <!-- <div class="col-2">
-                    <
-                </div> -->
-                <div class="slider-picture col-8">
-                    <img :src="photos[0]" alt="picture">
+                <div class="col-2 tac arrow">
+                    <i class="fas fa-arrow-circle-left"></i>
                 </div>
-                <!-- <div class="col-2">
-                    >
-                </div> -->
+                <div class="slider-picture col-8">
+                    <img :src="photos[pictureIndex]" alt="picture">
+                </div>
+                <div class="col-2 tac arrow">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </div>
             </div>
         </div>
         

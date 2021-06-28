@@ -1,7 +1,47 @@
-.hidden {
-    display: none;
-}
+/* CLASSI UTILITY */
 
-.show {
-    display: block;
-}
+    /* TESTO */
+    .cw {
+        color: white;
+    }
+    .cb{
+        color:rgb(107,173,227);
+    }
+    .ts{
+        letter-spacing:3px
+    }
+    .tj{
+        text-align: justify;
+    }
+
+    /* ALLINEAMENTO */
+    .tac {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tacr {
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .tae {
+        display:flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+    .tacl{
+        display:flex;
+        align-items: center;
+    }
+
+
+    img{
+        width: 100%;
+    }
+
+    .arrow{
+        font-size:xx-large;
+    }
