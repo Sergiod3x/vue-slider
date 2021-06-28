@@ -13,9 +13,14 @@ new Vue(
            ],
            pictureIndex : 0,
         },
+        created(){
+            setInterval(() => {
+                this.next();
+            },3000)
+        },
         methods:{
             next: function () {
-                if(this.pictureIndex===3){
+                if(this.pictureIndex===(this.photos.length-1)){
                     this.pictureIndex=0
                 } else{
                     this.pictureIndex++;
@@ -24,7 +29,7 @@ new Vue(
             },
             prev: function () {
                 if(this.pictureIndex===0){
-                    this.pictureIndex=3
+                    this.pictureIndex=this.photos.length-1;
                 } else{
                     this.pictureIndex--;
                 }
